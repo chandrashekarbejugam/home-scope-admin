@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SellerProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT PROFILE"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_pic"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:civ_border_width="@dimen/_2sdp"
+            app:civ_border_color="@color/white"
+            android:src="@drawable/register_top"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="-35dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_8sdp">
+        <TextView
+            android:id="@+id/userNameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number:"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"/>
+
+    <TextView
+        android:id="@+id/numberProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234567890"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_16sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eMail:"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"/>
+
+    <TextView
+        android:id="@+id/emailProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@gmail.com"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_16sdp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logoutCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginHorizontal="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_90sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_8sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:src="@drawable/log_out_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="LOGOUT"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_gravity="center_vertical"/>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

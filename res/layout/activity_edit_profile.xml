@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SellerProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_picEdit"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:civ_border_width="@dimen/_2sdp"
+            app:civ_border_color="@color/white"
+            android:src="@drawable/register_top"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/changeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE IMAGE"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"/>
+
+    <EditText
+        android:id="@+id/nameProfileEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:ems="10"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_16sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number:"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"/>
+
+    <EditText
+        android:id="@+id/numberProfileEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1234567890"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_16sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eMail:"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"/>
+
+    <EditText
+        android:id="@+id/emailProfileEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="email@gmail.com"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_16sdp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/saveCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginHorizontal="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_8sdp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Save Changes"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

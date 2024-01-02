@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".SellerHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="invisible"
+            android:src="@drawable/menu_24"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/investedCard"
+            android:layout_width="@dimen/_118sdp"
+            android:layout_height="@dimen/_150sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_80sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listed worth"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/investedNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24sdp"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/propertiesSoldCard"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_150sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_alignBaseline="@id/investedCard"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_80sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listed"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/propertyNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_26sdp"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/investedCard"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Properties"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+
+        <TextView
+            android:id="@+id/seeAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/investedCard"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="See all"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <LinearLayout
+            android:id="@+id/PropertiesLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seeAllText"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addHomeBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:cardCornerRadius="@dimen/_50sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            app:cardElevation="@dimen/_8sdp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/add_24"
+                android:layout_margin="@dimen/_8sdp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
